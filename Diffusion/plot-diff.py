@@ -8,7 +8,7 @@ import sys
 # nom du fichier de donnees (ayant 1 ligne d'en-tete)
 #fichier = "explicite.dat"
 #fichier = "implicite.dat"
-fichier = "cranknic.dat"
+fichier = "data/cranknic.dat"
 nech   = 10              # nombre d'instants affiches (echantillonnage regulier)
 #----------------------------------------------------#
 
@@ -67,7 +67,7 @@ plt.legend()
 plt.grid(True)
 
 # Nom du graphique : identique a celui du fichier
-graphname = fichier[ : fichier.rfind(".")] + ".pdf"
-plt.savefig( graphname, format="pdf")
+graphname = "data/"+ fichier[ : fichier.rfind(".")] + ".pdf"
+plt.savefig(graphname, format="pdf")
 print( " Le graphique '%s' a ete cree."%graphname )
 print( "\n Fermer la figure pour terminer.\n" )

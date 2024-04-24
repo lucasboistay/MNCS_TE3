@@ -21,7 +21,7 @@ extern float L;
 
 int main(){
 
-string filename = "cranknic.dat";
+string filename = "data/cranknic.dat";
 float dt=2;
 int nt = 1000;
 float D = 0.01;

@@ -36,4 +36,4 @@ zip :
 	zip -r $(ZIPNAME) $(ZIPFILES)
 
 plot :
-	python3 affiche.py data/$(DATANAME).txt
+	python3 plot-diff.py
